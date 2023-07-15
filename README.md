@@ -1,2 +1,3 @@
 # MyPortfolio
-My portfolio website
+
+Run ```npm run dev```
