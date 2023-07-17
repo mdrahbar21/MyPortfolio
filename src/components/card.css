@@ -1,0 +1,8 @@
+.card-wrapper {
+    display: flex;
+    height: 100%;
+  }
+  
+  .card-wrapper > div {
+    height: 100%;
+  }
