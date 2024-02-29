@@ -41,15 +41,15 @@ const Contact = () => {
 
   const handleMailto = () => {
     let mailtoLink = `mailto:mdrahbar21@iitk.ac.in?subject=Contact Form Submission - Rahbar's Portfolio&body=Name: ${form.name}%0D%0AEmail: ${form.email}%0D%0AMessage: ${form.message}`;
-    
+
 
     try {
       // setLoading(true); // Set loading to true before sending email
 
       window.location.href = mailtoLink;
-      
+
       // alert("Thank you. I will get back to you as soon as possible.");
-  
+
       setForm({
         name: "",
         email: "",
@@ -58,7 +58,7 @@ const Contact = () => {
     } catch (error) {
       setLoading(false);
       console.error(error);
-  
+
       alert("Ahh, something went wrong. Please try again.");
     }
     finally {
@@ -160,7 +160,7 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button> */}
-          <button type="submit" 
+          <button type="submit"
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-secondary hover:text-black transition duration-200 ease-in-out'
             onClick={handleMailto}><span>Send</span></button>
         </form>

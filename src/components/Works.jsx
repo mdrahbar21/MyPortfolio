@@ -1,5 +1,7 @@
 import React from "react";
-import {Tilt} from "react-tilt";
+import { Tooltip } from 'react-tooltip';
+
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -24,7 +26,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className={styles.projectCardContainer}
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -48,7 +50,17 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <h3 className='text-white font-bold text-[24px]'>
+            {name}
+            {name.includes('👁️') && ( // Check if the name contains an asterisk
+              <>
+                <sup data-tooltip-id="fundingInfo" data-tooltip-content="Funding received for this project!">*</sup>
+                <Tooltip id='fundingInfo' place='left' effect='solid'>
+                  Funding received for this project.
+                </Tooltip>
+              </>
+            )}
+          </h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
@@ -97,4 +109,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "project");
