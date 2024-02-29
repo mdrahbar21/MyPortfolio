@@ -37,6 +37,9 @@ import {
   trading,
   resumeBuilder,
   ml,
+  ics,
+  c3i,
+  sensor,
 } from "../assets";
 
 export const navLinks = [
@@ -250,7 +253,7 @@ const projects = [
         color: "orange-text-gradient",
       }
     ],
-    image: "src/assets/c3i.png",
+    image: c3i,
     source_code_link: "https://github.com/mdrahbar21/Smart_Search",
   },
   {
@@ -290,7 +293,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "src/assets/ics.png",
+    image: ics,
     source_code_link: "https://github.com/",
   },
   {
@@ -374,7 +377,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "src/assets/sensor.png",
+    image: sensor,
     source_code_link: "https://github.com/mdrahbar21/sensorPlacement_SoCE",
   },
 ];

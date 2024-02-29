@@ -41,6 +41,9 @@ import tripguide from "./tripguide.png";
 import trading from "./trading.png";
 import resumeBuilder from "./resume-builder.png";
 import ml from "./ML.png";
+import ics from "./ics.png";
+import c3i from "./c3i.png";
+import sensor from "./sensor.png";
 
 export {
   logo,
@@ -83,4 +86,7 @@ export {
   trading,
   resumeBuilder,
   ml,
+  ics,
+  c3i,
+  sensor,
 };
