@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import machinelearning from "./machinelearning.png";
+import machinelearning from "./machineLearning.png";
 import devops from "./devops.png";
 
 import css from "./tech/css.png";
