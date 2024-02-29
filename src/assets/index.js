@@ -40,7 +40,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import trading from "./trading.png";
 import resumeBuilder from "./resume-builder.png";
-import ml from "./ml.png";
+import ml from "./ML.png";
 
 export {
   logo,
