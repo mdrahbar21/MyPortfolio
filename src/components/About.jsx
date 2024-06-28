@@ -50,10 +50,10 @@ const About = () => {
       variants={fadeIn("","",0.1,1)}
       className='mt-4 text-secondary text-[17px] max-2-3xl leading-[30px]'
       >
-        I am a junior undergrad in the Dep. of Civil Engineering at one of India's 
+        I am a senior undergrad in the Dept. of Civil Engineering at one of India's 
         most prestigious institute IIT-Kanpur.
-        I have also resigned from another World's prestigious academy NDA, from 148<sup>th </sup> batch and service AF(Flying).<br />
-        I love watching anime, travelling and many more things... 
+        I have been a part of another World's prestigious academy NDA, from 148<sup>th </sup> batch and service AF(Flying).<br />
+        I love watching hiking, travelling, watching anime and a lot more things... 
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service,index) => (
